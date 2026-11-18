@@ -1,0 +1,64 @@
+import java.util.*;
+
+public calss addlast2
+{
+    public class LinkedList
+    {
+       public static Node head;
+       public static Node tail;
+
+    
+
+         public static class Node
+      {
+            int data;
+           Node next;
+
+             public node(int n)
+           {
+               this.data = n;
+                this.next = null;
+            }
+        }
+
+        public static void addstart(int data)
+        {
+            Node temp = new Node(data);
+
+            if(head == null)
+            {
+                head = tail = temp;
+                return;
+            }
+            temp.next = head;
+            head = temp;
+        }
+
+        public static void addlast(int n)
+        {
+            Node tenp = new node(n);
+
+            if(head == null)
+            {
+                 head = tail = temp; 
+                 return;
+            }
+                temp.next = tail;
+                   tail = temp;
+            
+        }
+    }
+    public static void main(String args[])
+    {
+        LinkedList obj1 = new LinkedList();
+
+        obj1.addstart(5)
+        obj1.addstart(2);
+        obj1.addlast(3);
+        obj1.addlast(9);
+        
+         
+
+    }
+
+}

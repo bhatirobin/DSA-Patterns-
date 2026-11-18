@@ -1,0 +1,22 @@
+h1{
+    text-align: center;
+}
+#container{
+    height: 500px;
+    width: 80%;
+    background-color: black;
+    margin:10px auto;
+    border: 15px solid rgb(99, 56, 56);
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+   
+}
+#container div{
+    height: 40px;
+    width:50px;
+    text-align: center;
+    color:white;
+    font-size: 10px;
+
+}

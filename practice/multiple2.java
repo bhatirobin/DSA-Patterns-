@@ -1,0 +1,25 @@
+import java.util.*;
+public class multiple2 
+{
+    public static void multiple(int n, int k)
+    {
+        if(k == 1)
+        {
+            System.out.println(k);
+            return;
+        }
+        multiple(n, k-1);
+        System.out.println(n*k);
+    }
+    public static void main(String args[])
+        {
+              Scanner sc = new Scanner(System.in);
+
+              int n = sc.nextInt();
+              int k = sc.nextInt();
+
+
+              multiple(n, k);
+        }
+    
+}
